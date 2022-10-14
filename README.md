@@ -2,4 +2,4 @@
 
 ## Demo
 
-[https://SCTAP.github.io/DevelopmentTool](https://SCTAP.github.io/DevelopmentTool)
+[https://SCTAP.github.io/development-tool](https://SCTAP.github.io/development-tool)
