@@ -1,0 +1,2102 @@
+[
+  {
+    "user": "user1",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, have a rest, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:03:17",
+    "app": "#3",
+    "duration": "7.9 min"
+  },
+  {
+    "user": "user2",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, have a rest, is trigger_location) \n",
+    "endTime": "2022-09-30 15:02:35",
+    "app": "#3",
+    "duration": "7.17 min"
+  },
+  {
+    "user": "user1",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((((Printer_Finish, today trigger_timestamp, , is trigger_objectId)), count, Printer_Finish), =, 50)\nTHEN (Send_Message, Please add paper to printer {trigger_objectId}, ) \n\n",
+    "endTime": "2022-09-30 15:10:44",
+    "app": "#4",
+    "duration": "7.21 min"
+  },
+  {
+    "user": "user1",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:50:00",
+    "app": "#1",
+    "duration": "4.35 min"
+  },
+  {
+    "user": "user3",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, have a rest, is trigger_location) \n",
+    "endTime": "2022-09-30 15:04:43",
+    "app": "#3",
+    "duration": "9.23 min"
+  },
+  {
+    "user": "user4",
+    "dsl": "IF (Person_Entry, is laboratory01)\nWHEN ((((Printer_Finish, today trigger_timestamp, is laboratory01, is trigger_objectId),(Person_Entry, today trigger_timestamp, is laboratory01, is trigger_objectId)), time, Person_Entry Printer_Finish), >, 3600)\nTHEN (Speak_VoiceMessage, take a break, is laboratory01) \n\n",
+    "endTime": "2022-09-30 15:07:30",
+    "app": "#3",
+    "duration": "8.09 min"
+  },
+  {
+    "user": "user5",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, have a rest please, is trigger_location) \n",
+    "endTime": "2022-09-30 15:04:42",
+    "app": "#3",
+    "duration": "8.37 min"
+  },
+  {
+    "user": "user6",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, please dont over work and take good care of your health, is trigger_location) \n",
+    "endTime": "2022-09-30 15:02:14",
+    "app": "#3",
+    "duration": "7.14 min"
+  },
+  {
+    "user": "user7",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, Dear {trigger_objectId} please have a break, is trigger_location) \n",
+    "endTime": "2022-09-30 15:04:54",
+    "app": "#3",
+    "duration": "8.4 min"
+  },
+  {
+    "user": "user8",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, you need have a rest, is trigger_location) \n",
+    "endTime": "2022-09-30 15:06:50",
+    "app": "#3",
+    "duration": "11.71 min"
+  },
+  {
+    "user": "user9",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, have a rest, is trigger_location) \n",
+    "endTime": "2022-09-30 15:04:52",
+    "app": "#3",
+    "duration": "8.53 min"
+  },
+  {
+    "user": "user10",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, you need take a break, is trigger_location) \n",
+    "endTime": "2022-09-30 15:07:41",
+    "app": "#3",
+    "duration": "8.03 min"
+  },
+  {
+    "user": "user11",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, you have worked too long and need a rest, is trigger_location) \n",
+    "endTime": "2022-09-30 15:05:46",
+    "app": "#3",
+    "duration": "8.97 min"
+  },
+  {
+    "user": "user2",
+    "dsl": "IF (Printer_Finish, is trigger_location)\nWHEN ((((Printer_Finish, today trigger_timestamp, is trigger_location, is trigger_objectId)), count, Printer_Finish), =, 50)\nTHEN (Send_Message, please add paper, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:13:12",
+    "app": "#4",
+    "duration": "10.27 min"
+  },
+  {
+    "user": "user3",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((((Printer_Finish, today trigger_timestamp, is trigger_location, is trigger_objectId)), count, Printer_Finish), >, 50)\nTHEN (Send_Message, add paper, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:12:42",
+    "app": "#4",
+    "duration": "7.73 min"
+  },
+  {
+    "user": "user12",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, {trigger_objectId} please have a break, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:06:06",
+    "app": "#3",
+    "duration": "8.37 min"
+  },
+  {
+    "user": "user4",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((((Printer_Finish, today trigger_timestamp, , is trigger_objectId)), count, Printer_Finish), =, 50)\nTHEN (Send_Message, Please add paper to printer {trigger_objectId}, ) \n\n",
+    "endTime": "2022-09-30 15:16:24",
+    "app": "#4",
+    "duration": "8.61 min"
+  },
+  {
+    "user": "user5",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((((Printer_Finish, today trigger_timestamp, is trigger_location, is trigger_objectId)), count, Printer_Finish), =, 50)\nTHEN (Send_Message, please add paper in time, is trigger_location) \n",
+    "endTime": "2022-09-30 15:12:37",
+    "app": "#4",
+    "duration": "7.66 min"
+  },
+  {
+    "user": "user6",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((((Printer_Finish, today trigger_timestamp, is trigger_location, is trigger_objectId)), count, Printer_Finish), >, 49)\nTHEN (Send_Message, please add paper to printer{trigger_objectId}, ) \n\n",
+    "endTime": "2022-09-30 15:10:27",
+    "app": "#4",
+    "duration": "7.96 min"
+  },
+  {
+    "user": "user2",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:50:36",
+    "app": "#1",
+    "duration": "4.93 min"
+  },
+  {
+    "user": "user3",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:50:21",
+    "app": "#1",
+    "duration": "4.68 min"
+  },
+  {
+    "user": "user4",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, any, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:53:10",
+    "app": "#1",
+    "duration": "7.41 min"
+  },
+  {
+    "user": "user5",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:49:29",
+    "app": "#1",
+    "duration": "3.85 min"
+  },
+  {
+    "user": "user1",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:55:07",
+    "app": "#2",
+    "duration": "4.95 min"
+  },
+  {
+    "user": "user2",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:55:11",
+    "app": "#2",
+    "duration": "4.43 min"
+  },
+  {
+    "user": "user3",
+    "dsl": "IF (Temperature_Change, event_data.temperature > 25,)\nWHEN (((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:55:11",
+    "app": "#2",
+    "duration": "4.68 min"
+  },
+  {
+    "user": "user1",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_On), >, 10)\nTHEN (Speak_VoiceMessage, Please regulate the use of electrical appliances, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:18:19",
+    "app": "#5",
+    "duration": "7.34 min"
+  },
+  {
+    "user": "user2",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_On), >, 10)\nTHEN (Speak_VoiceMessage, Please regulate the use of electrical appliances, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:17:46",
+    "app": "#5",
+    "duration": "4.41 min"
+  },
+  {
+    "user": "user7",
+    "dsl": "IF (Printer_Start, )\nWHEN ((((Printer_Start, today trigger_timestamp, , is trigger_objectId)), count, Printer_Start), =, 50)\nTHEN (Send_Message, plz add papers for {trigger_objectId}, ) \n\n",
+    "endTime": "2022-09-30 15:12:45",
+    "app": "#4",
+    "duration": "7.6 min"
+  },
+  {
+    "user": "user8",
+    "dsl": "IF (Printer_Start, )\nWHEN ((((Printer_Start, today trigger_timestamp, , is trigger_objectId)), count, Printer_Start), =, 50)\nTHEN (Send_Message, please add paper for {trigger_objectId}, ) \n\n",
+    "endTime": "2022-09-30 15:13:56",
+    "app": "#4",
+    "duration": "6.87 min"
+  },
+  {
+    "user": "user9",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((((Printer_Finish, today trigger_timestamp, , is trigger_objectId)), count, Printer_Finish), =, 50)\nTHEN (Send_Message, Please add paper to printer {trigger_objectId}, ) \n",
+    "endTime": "2022-09-30 15:10:19",
+    "app": "#4",
+    "duration": "5.28 min"
+  },
+  {
+    "user": "user1",
+    "dsl": "IF ((Window_On, ), (AC_On, ))\nWHEN (((is trigger_location, any, ac, current_ac_state), =, on), AND, ((is trigger_location, any, window, current_window_state), =, on))\nTHEN (Speak_VoiceMessage, Both the air conditioner and the Windows are open and please turn off one of them, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:24:47",
+    "app": "#6",
+    "duration": "6.25 min"
+  },
+  {
+    "user": "user10",
+    "dsl": "IF (Printer_Start, )\nWHEN ((((Printer_Start, today trigger_timestamp, , is trigger_objectId)), count, Printer_Start), =, 50)\nTHEN (Send_Message, {trigger_objectId} need add papers, ) \n\n",
+    "endTime": "2022-09-30 15:13:56",
+    "app": "#4",
+    "duration": "6.04 min"
+  },
+  {
+    "user": "user6",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:49:41",
+    "app": "#1",
+    "duration": "4.04 min"
+  },
+  {
+    "user": "user7",
+    "dsl": "IF (Person_Entry, )\nWHEN (((is trigger_location, all, light, current_light_state), =, off), ((trigger_location, people_count), >, 0))\nTHEN (Light_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:50:18",
+    "app": "#1",
+    "duration": "4.63 min"
+  },
+  {
+    "user": "user8",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , trigger_location) \n\n",
+    "endTime": "2022-09-30 14:50:33",
+    "app": "#1",
+    "duration": "4.88 min"
+  },
+  {
+    "user": "user9",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , trigger_location) \n\n",
+    "endTime": "2022-09-30 14:50:44",
+    "app": "#1",
+    "duration": "5.05 min"
+  },
+  {
+    "user": "user3",
+    "dsl": "IF (Light_Off, )\nWHEN ((((Light_Off, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_Off), >, 8)\nTHEN (Speak_VoiceMessage, Standardize the use of electrical appliances, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:18:27",
+    "app": "#5",
+    "duration": "5.56 min"
+  },
+  {
+    "user": "user4",
+    "dsl": "IF ((Light_Off, ), (Light_On, ))\nWHEN ((((Light_Off, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_Off), >, 10)\nTHEN (Speak_VoiceMessage, use electric appliance normatively, is trigger_location) \n\nWHEN ((((Light_On, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_On), >, 10)\nTHEN (Speak_VoiceMessage, use electric appliance normatively, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:21:31",
+    "app": "#5",
+    "duration": "4.95 min"
+  },
+  {
+    "user": "user4",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0), ((is trigger_location, temperature), >, 25))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:59:08",
+    "app": "#2",
+    "duration": "5.78 min"
+  },
+  {
+    "user": "user5",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:56:04",
+    "app": "#2",
+    "duration": "6.36 min"
+  },
+  {
+    "user": "user10",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, any, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:52:34",
+    "app": "#1",
+    "duration": "6.83 min"
+  },
+  {
+    "user": "user2",
+    "dsl": "IF (Window_On, )\nWHEN (((is trigger_location, any, ac, current_ac_state), =, on), AND, ((is trigger_location, any, window, current_window_state), =, on))\nTHEN (Speak_VoiceMessage, close the ac, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:25:40",
+    "app": "#6",
+    "duration": "7.66 min"
+  },
+  {
+    "user": "user5",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, , is trigger_objectId)), count, Light_On), >, 10)\nTHEN (Speak_VoiceMessage, Please use electrical appliances properly, is trigger_location) \n",
+    "endTime": "2022-09-30 15:18:23",
+    "app": "#5",
+    "duration": "5.57 min"
+  },
+  {
+    "user": "user6",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, , is trigger_objectId)), count, Light_On), >, 10)\nTHEN (Speak_VoiceMessage, Use electrical appliances wisely, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:19:22",
+    "app": "#5",
+    "duration": "8.63 min"
+  },
+  {
+    "user": "user3",
+    "dsl": "IF ((Window_On, ), (AC_On, ))\nWHEN (((is trigger_location, any, ac, current_ac_state), =, on), OR, ((is trigger_location, any, window, current_window_state), =, on))\nTHEN (Speak_VoiceMessage, turn off the ac or the window, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:25:58",
+    "app": "#6",
+    "duration": "7.27 min"
+  },
+  {
+    "user": "user6",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:54:51",
+    "app": "#2",
+    "duration": "5.0 min"
+  },
+  {
+    "user": "user7",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:56:13",
+    "app": "#2",
+    "duration": "5.73 min"
+  },
+  {
+    "user": "user8",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n",
+    "endTime": "2022-09-30 14:54:44",
+    "app": "#2",
+    "duration": "4.05 min"
+  },
+  {
+    "user": "user1",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Leave, last 0.1 min trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), count, Person_Leave), >, 0)\nTHEN (Speak_VoiceMessage, Please be safe indoors, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:37:58",
+    "app": "#7",
+    "duration": "12.76 min"
+  },
+  {
+    "user": "user2",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Leave, last 0.1 min trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), count, Person_Leave), >, 0)\nTHEN (Speak_VoiceMessage, Please be careful indoors, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:38:19",
+    "app": "#7",
+    "duration": "12.24 min"
+  },
+  {
+    "user": "user7",
+    "dsl": "IF (Light_Off, )\nWHEN ((((Light_Off, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_Off), >, 8)\nTHEN (Speak_VoiceMessage, Please standardize the use of electrical appliances, is trigger_location) \n",
+    "endTime": "2022-09-30 15:17:18",
+    "app": "#5",
+    "duration": "4.4 min"
+  },
+  {
+    "user": "user8",
+    "dsl": "IF (Light_Off, )\nWHEN ((((Light_Off, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_Off), >, 9)\nTHEN (Speak_VoiceMessage, please regulated use of electrical appliances, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:19:07",
+    "app": "#5",
+    "duration": "5.02 min"
+  },
+  {
+    "user": "user1",
+    "dsl": "IF (Fire_Alarm, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Speak_VoiceMessage, Please stay away from the burning room, is trigger_location) \n\nWHEN ((is reachableTo trigger_location, people_count), >, 0)\nTHEN (Speak_VoiceMessage, Please stay away from the burning room, is reachableTo trigger_location) \n\n",
+    "endTime": "2022-09-30 15:44:59",
+    "app": "#8",
+    "duration": "6.8 min"
+  },
+  {
+    "user": "user4",
+    "dsl": "IF ((Window_On, is laboratory01), (AC_On, is laboratory01))\nTHEN (Speak_VoiceMessage, Please close window or AC to save energy, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:29:35",
+    "app": "#6",
+    "duration": "7.82 min"
+  },
+  {
+    "user": "user3",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), time, Person_Leave Person_Entry), <, 0.1)\nTHEN (Speak_VoiceMessage, be careful, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:36:35",
+    "app": "#7",
+    "duration": "10.27 min"
+  },
+  {
+    "user": "user5",
+    "dsl": "IF ((Window_On, ), (AC_On, ))\nWHEN (((is trigger_location, any, ac, current_ac_state), =, on), AND, ((is trigger_location, any, window, current_window_state), =, on))\nTHEN (Speak_VoiceMessage, Please close the Windows to avoid wasting the cooling effect of air conditioning, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:24:22",
+    "app": "#6",
+    "duration": "5.8 min"
+  },
+  {
+    "user": "user6",
+    "dsl": "IF ((Window_On, ), (AC_On, ))\nWHEN (((is trigger_location, any, ac, current_ac_state), =, on), AND, ((is trigger_location, any, window, current_window_state), =, on))\nTHEN (Speak_VoiceMessage, plz close window or ac, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:26:31",
+    "app": "#6",
+    "duration": "6.91 min"
+  },
+  {
+    "user": "user7",
+    "dsl": "IF ((AC_On, ), (Window_On, ))\nWHEN (((is trigger_location, any, window, current_window_state), =, on), AND, ((is trigger_location, any, ac, current_ac_state), =, on))\nTHEN (Speak_VoiceMessage, please turn off the window or AC, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:24:46",
+    "app": "#6",
+    "duration": "7.23 min"
+  },
+  {
+    "user": "user4",
+    "dsl": "IF (Person_Entry, is meetingroom01)\nWHEN ((((Person_Entry, today trigger_timestamp, is meetingroom01, is trigger_objectId),(Person_Leave, today trigger_timestamp, is adjacentTo meetingroom01, is trigger_objectId)), time, Person_Leave Person_Entry), <, 1)\nTHEN (Speak_VoiceMessage, No more running please, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:42:12",
+    "app": "#7",
+    "duration": "12.21 min"
+  },
+  {
+    "user": "user1",
+    "dsl": "IF ((Person_Entry, is meetingroom01), (Person_Entry, is meetingroom02))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, Please patrol {trigger_location}, ) \n\n",
+    "endTime": "2022-09-30 15:50:36",
+    "app": "#9",
+    "duration": "5.43 min"
+  },
+  {
+    "user": "user2",
+    "dsl": "IF ((Person_Entry, is meetingroom01), (Person_Entry, is meetingroom02))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, Please patrol the {trigger_location} room, ) \n\n",
+    "endTime": "2022-09-30 15:54:40",
+    "app": "#9",
+    "duration": "7.67 min"
+  },
+  {
+    "user": "user9",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_On), >, 5)\nTHEN (Speak_VoiceMessage, Please do not open light frequently, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:16:54",
+    "app": "#5",
+    "duration": "6.37 min"
+  },
+  {
+    "user": "user5",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), time, Person_Leave Person_Entry), <, 0.1)\nTHEN (Speak_VoiceMessage, dont run too fast, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:37:35",
+    "app": "#7",
+    "duration": "12.78 min"
+  },
+  {
+    "user": "user2",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, please leave the room, (is trigger_location,is adjacentTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:46:45",
+    "app": "#8",
+    "duration": "8.15 min"
+  },
+  {
+    "user": "user6",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), time, Person_Leave Person_Entry), <, 0.1)\nTHEN (Speak_VoiceMessage, Pay attention to safety, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:39:39",
+    "app": "#7",
+    "duration": "12.71 min"
+  },
+  {
+    "user": "user7",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), time, Person_Leave Person_Entry), <, 0.2)\nTHEN (Speak_VoiceMessage, be careful please, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:37:53",
+    "app": "#7",
+    "duration": "12.69 min"
+  },
+  {
+    "user": "user8",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), time, Person_Leave Person_Entry), <, 0.1)\nTHEN (Speak_VoiceMessage, {trigger_objectId} plz be careful, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:34:21",
+    "app": "#7",
+    "duration": "11.37 min"
+  },
+  {
+    "user": "user3",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, run far away from {trigger_location}, (is trigger_location,is adjacentTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:43:27",
+    "app": "#8",
+    "duration": "6.66 min"
+  },
+  {
+    "user": "user1",
+    "dsl": "IF (Person_Leave, )\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on))\nTHEN (Send_Message, Dear {trigger_objectId} please go back to {trigger_location} and turn off the device, ) \n\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, oven, oven_working_state), =, on))\nTHEN (Send_Message, Dear {trigger_objectId} please go back to {trigger_location} and turn off the device, ) \n\n",
+    "endTime": "2022-09-30 15:59:37",
+    "app": "#10",
+    "duration": "8.72 min"
+  },
+  {
+    "user": "user4",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, run away from {trigger_location}, (is trigger_location,is adjacentTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:49:14",
+    "app": "#8",
+    "duration": "6.8 min"
+  },
+  {
+    "user": "user8",
+    "dsl": "IF ((Window_On, is trigger_location), (AC_On, is trigger_location))\nWHEN (((is trigger_location, any, window, current_window_state), =, on), AND, ((is trigger_location, any, ac, current_ac_state), =, on))\nTHEN (Speak_VoiceMessage, Please close window or air conditioner, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:22:36",
+    "app": "#6",
+    "duration": "3.36 min"
+  },
+  {
+    "user": "user5",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, Fire warning leave {trigger_location} now, (is trigger_location,is adjacentTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:46:00",
+    "app": "#8",
+    "duration": "8.15 min"
+  },
+  {
+    "user": "user3",
+    "dsl": "IF ((Person_Entry, is meetingroom01,timestamp > 23:30:00), (Person_Entry, is meetingroom02,timestamp > 23:30:00))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, Security please guards this {trigger_location}, ) \n\n",
+    "endTime": "2022-09-30 15:50:07",
+    "app": "#9",
+    "duration": "6.44 min"
+  },
+  {
+    "user": "user4",
+    "dsl": "IF ((Person_Entry, is meetingroom01,timestamp > 23:30:00), (Person_Entry, is meetingroom02,timestamp > 23:30:00))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, inspect {trigger_location},) \n\n",
+    "endTime": "2022-09-30 15:54:25",
+    "app": "#9",
+    "duration": "5.02 min"
+  },
+  {
+    "user": "user5",
+    "dsl": "IF (Person_Entry, is meetingroom01,timestamp > 23:30:00)\nWHEN ((is meetingroom01, people_count), >, 3)\nTHEN (Send_Message, Call in patrols to avoid crowd violations, ) \n\n",
+    "endTime": "2022-09-30 15:52:45",
+    "app": "#9",
+    "duration": "6.54 min"
+  },
+  {
+    "user": "user6",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, run, (is trigger_location,is adjacentTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:46:50",
+    "app": "#8",
+    "duration": "6.96 min"
+  },
+  {
+    "user": "user6",
+    "dsl": "IF (Person_Entry, is meetingroom01,timestamp > 23:30:00)\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Speak_VoiceMessage, Room {trigger_location} has situation and please come here and have a check, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:53:29",
+    "app": "#9",
+    "duration": "6.43 min"
+  },
+  {
+    "user": "user7",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, fire alarmed get out quickly, (is trigger_location,is adjacentTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:44:11",
+    "app": "#8",
+    "duration": "6.11 min"
+  },
+  {
+    "user": "user7",
+    "dsl": "IF ((Person_Entry, is meetingroom01,timestamp > 23:30:00), (Person_Entry, is meetingroom02,timestamp > 23:30:00))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, have a check, ) \n\n",
+    "endTime": "2022-09-30 15:49:49",
+    "app": "#9",
+    "duration": "5.44 min"
+  },
+  {
+    "user": "user8",
+    "dsl": "IF ((Person_Entry, is meetingroom01,timestamp > 23:30:00), (Person_Entry, is meetingroom02,timestamp > 23:30:00))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, come soon, ) \n\n",
+    "endTime": "2022-09-30 15:46:25",
+    "app": "#9",
+    "duration": "3.48 min"
+  },
+  {
+    "user": "user8",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, {trigger_location} is fire and please leave now, (is trigger_location,is reachableTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:42:50",
+    "app": "#8",
+    "duration": "8.21 min"
+  },
+  {
+    "user": "user9",
+    "dsl": "IF ((Person_Entry, is meetingroom01,timestamp > 23:30:00), (Person_Entry, is meetingroom02,timestamp > 23:30:00))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, Please patrol meetingroom {trigger_location}, ) \n\n",
+    "endTime": "2022-09-30 15:51:48",
+    "app": "#9",
+    "duration": "6.41 min"
+  },
+  {
+    "user": "user10",
+    "dsl": "IF ((Person_Entry, is meetingroom01,timestamp > 23:30:00), (Person_Entry, is meetingroom02,timestamp > 23:30:00))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, Please patrol meetingroom {trigger_location}, ) \n\n",
+    "endTime": "2022-09-30 15:51:38",
+    "app": "#9",
+    "duration": "5.94 min"
+  },
+  {
+    "user": "user2",
+    "dsl": "IF (Person_Leave, is tearoom01)\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, oven, oven_working_state), =, on))\nTHEN (Send_Message, {trigger_objectId} please go back and inspect the device, ) \n\nWHEN (((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on), AND, ((is trigger_location, people_count), =, 0))\nTHEN (Send_Message, {trigger_objectId} please go back and inspect the device, ) \n\n",
+    "endTime": "2022-09-30 16:03:21",
+    "app": "#10",
+    "duration": "8.4 min"
+  },
+  {
+    "user": "user3",
+    "dsl": "IF (Person_Leave, is tearoom01)\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, oven, oven_working_state), =, on))\nTHEN (Send_Message, {trigger_objectId} please go back to the tearoom and inspect the devices, ) \n\nWHEN (((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on), AND, ((is trigger_location, people_count), =, 0))\nTHEN (Send_Message, {trigger_objectId} please go back to the tearoom and inspect the devices, ) \n\n",
+    "endTime": "2022-09-30 15:57:23",
+    "app": "#10",
+    "duration": "7.04 min"
+  },
+  {
+    "user": "user4",
+    "dsl": "IF (Person_Leave, is tearoom01)\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, oven, oven_working_state), =, on))\nTHEN (Send_Message, {trigger_objectId} please go back to the tearoom and inspect the devices, ) \n\nWHEN (((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on), AND, ((is trigger_location, people_count), =, 0))\nTHEN (Send_Message, {trigger_objectId} please go back to the tearoom and inspect the devices, ) \n\n",
+    "endTime": "2022-09-30 16:04:27",
+    "app": "#10",
+    "duration": "9.71 min"
+  },
+  {
+    "user": "user13",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Send_Message, {trigger_objectId} please have a rest, ) \n",
+    "endTime": "2022-09-30 15:05:46",
+    "app": "#3",
+    "duration": "8.82 min"
+  },
+  {
+    "user": "user5",
+    "dsl": "IF (Person_Leave, is tearoom01)\nWHEN (((is trigger_location, any, oven, oven_working_state), =, on), OR, ((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on), AND, ((is trigger_location, people_count), =, 0))\nTHEN (Send_Message, Please go back and turn off the devices, ) \n\n",
+    "endTime": "2022-09-30 15:59:08",
+    "app": "#10",
+    "duration": "6.17 min"
+  },
+  {
+    "user": "user11",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((((Printer_Finish, today trigger_timestamp, , is trigger_objectId)), count, Printer_Finish), =, 50)\nTHEN (Send_Message, Dear manager please add paper to printer {trigger_objectId}, ) \n\n",
+    "endTime": "2022-09-30 15:12:24",
+    "app": "#4",
+    "duration": "6.42 min"
+  },
+  {
+    "user": "user6",
+    "dsl": "IF (Person_Leave, is tearoom01)\nWHEN (((is tearoom01, any, oven, oven_working_state), =, on), OR, ((is tearoom01, any, water_dispenser, water_dispenser_working_state), =, on), AND, ((is tearoom01, people_count), =, 0))\nTHEN (Send_Message, {trigger_ObjectId} please back to supervise the use of dangerous appliances, ) \n\n",
+    "endTime": "2022-09-30 16:02:50",
+    "app": "#10",
+    "duration": "9.05 min"
+  },
+  {
+    "user": "user14",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, {trigger_objectId} do not work too long, is trigger_location) \n",
+    "endTime": "2022-09-30 15:07:07",
+    "app": "#3",
+    "duration": "8.63 min"
+  },
+  {
+    "user": "user11",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:50:21",
+    "app": "#1",
+    "duration": "4.69 min"
+  },
+  {
+    "user": "user7",
+    "dsl": "IF (Person_Leave, )\nWHEN (((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on), OR, ((is trigger_location, any, oven, oven_working_state), =, on), AND, ((is trigger_location, people_count), =, 0))\nTHEN (Send_Message, go back,) \n\n",
+    "endTime": "2022-09-30 15:57:36",
+    "app": "#10",
+    "duration": "7.54 min"
+  },
+  {
+    "user": "user8",
+    "dsl": "IF (Person_Leave, )\nWHEN (((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on), OR, ((is trigger_location, any, oven, oven_working_state), =, on), AND, ((is trigger_location, people_count), =, 0))\nTHEN (Speak_VoiceMessage, {trigger_objectId} go back , ) \n\n",
+    "endTime": "2022-09-30 15:55:13",
+    "app": "#10",
+    "duration": "8.51 min"
+  },
+  {
+    "user": "user11",
+    "dsl": "IF ((Person_Entry, is meetingroom01,timestamp > 23:30:00), (Person_Entry, is meetingroom02,timestamp > 23:30:00))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, please ask bad boys in {trigger_location} get out, ) \n\n",
+    "endTime": "2022-09-30 15:54:18",
+    "app": "#9",
+    "duration": "5.4 min"
+  },
+  {
+    "user": "user15",
+    "dsl": "IF (Person_Entry,is laboratory01)\nWHEN ((((Person_Entry, today trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, today trigger_timestamp, is trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), >, 3600)\nTHEN (Speak_VoiceMessage, {trigger_objectId} you need rest, is trigger_location) \n",
+    "endTime": "2022-09-30 15:05:23",
+    "app": "#3",
+    "duration": "9.04 min"
+  },
+  {
+    "user": "user9",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) ",
+    "endTime": "2022-09-30 14:56:03",
+    "app": "#2",
+    "duration": "5.15 min"
+  },
+  {
+    "user": "user10",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_On), >, 10)\nTHEN (Speak_VoiceMessage, Please switch the lights properly, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:20:55",
+    "app": "#5",
+    "duration": "6.77 min"
+  },
+  {
+    "user": "user12",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((((Printer_Finish, today trigger_timestamp, is trigger_location, is trigger_objectId)), count, Printer_Finish), =, 50)\nTHEN (Speak_VoiceMessage, please add the paper to printer in {trigger_location}, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:14:06",
+    "app": "#4",
+    "duration": "7.74 min"
+  },
+  {
+    "user": "user9",
+    "dsl": "IF ((Window_On, ), (AC_On, ))\nWHEN (((is trigger_location, any, window, current_window_state), =, on), AND, ((is trigger_location, any, ac, current_ac_state), =, on))\nTHEN (Speak_VoiceMessage, Please turn off the window or air conditioner, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:24:26",
+    "app": "#6",
+    "duration": "7.29 min"
+  },
+  {
+    "user": "user13",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((((Printer_Finish, today trigger_timestamp, is trigger_location, is trigger_objectId)), count, Printer_Finish), =, 50)\nTHEN (Speak_VoiceMessage, please add paper, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:14:17",
+    "app": "#4",
+    "duration": "8.23 min"
+  },
+  {
+    "user": "user14",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((((Printer_Finish, today trigger_timestamp, is trigger_location, is trigger_objectId)), count, Printer_Finish), =, 50)\nTHEN (Speak_VoiceMessage, please add the paper to printer, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:15:31",
+    "app": "#4",
+    "duration": "8.13 min"
+  },
+  {
+    "user": "user15",
+    "dsl": "IF (Printer_Finish, )\nWHEN ((trigger_location, any, printer, printer_work_state), =, 50)\nTHEN (Send_Message, please admin add paper to {trigger_objectId},) \n\n",
+    "endTime": "2022-09-30 15:11:16",
+    "app": "#4",
+    "duration": "5.68 min"
+  },
+  {
+    "user": "user12",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location)\n",
+    "endTime": "2022-09-30 14:52:36",
+    "app": "#1",
+    "duration": "6.87 min"
+  },
+  {
+    "user": "user13",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) ",
+    "endTime": "2022-09-30 14:53:03",
+    "app": "#1",
+    "duration": "7.3 min"
+  },
+  {
+    "user": "user9",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Leave, last 0.1 min trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), count, Person_Leave), >, 0)\nTHEN (Speak_VoiceMessage, Please don't move quickly indoors, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:37:38",
+    "app": "#7",
+    "duration": "12.78 min"
+  },
+  {
+    "user": "user14",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) ",
+    "endTime": "2022-09-30 14:50:27",
+    "app": "#1",
+    "duration": "4.79 min"
+  },
+  {
+    "user": "user10",
+    "dsl": "IF (Temperature_Change, event_data.temperature > 25,)\nWHEN (((is trigger_location, people_count), >, 0), ((is trigger_location, all, ac, current_ac_state), =, off))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:59:23",
+    "app": "#2",
+    "duration": "6.6 min"
+  },
+  {
+    "user": "user9",
+    "dsl": "IF (Person_Leave, is tearoom01)\nWHEN (((is trigger_location, all, water_dispenser, water_dispenser_working_state), =, on), OR, ((is trigger_location, any, ac, current_ac_state), =, on), AND, ((is trigger_location, people_count), =, 0))\nTHEN (Send_Message, Come back, ) \n\n",
+    "endTime": "2022-09-30 15:56:34",
+    "app": "#10",
+    "duration": "4.62 min"
+  },
+  {
+    "user": "user9",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, Please stay away from the fire, (is trigger_location,is reachableTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:45:10",
+    "app": "#8",
+    "duration": "7.29 min"
+  },
+  {
+    "user": "user11",
+    "dsl": "IF (Temperature_Change, event_data.temperature > 25,)\nWHEN (((is trigger_location, people_count), >, 0), ((is trigger_location, all, ac, current_ac_state), =, off))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:56:30",
+    "app": "#2",
+    "duration": "5.94 min"
+  },
+  {
+    "user": "user11",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_On), >, 7)\nTHEN (Speak_VoiceMessage, please use the device usually, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:18:48",
+    "app": "#5",
+    "duration": "6.2 min"
+  },
+  {
+    "user": "user12",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:57:27",
+    "app": "#2",
+    "duration": "4.69 min"
+  },
+  {
+    "user": "user15",
+    "dsl": "IF (Person_Entry, )\nWHEN ((is trigger_location, all, light, current_light_state), =, off)\nTHEN (Light_Turn_On, , is trigger_location) \n",
+    "endTime": "2022-09-30 14:50:18",
+    "app": "#1",
+    "duration": "4.63 min"
+  },
+  {
+    "user": "user10",
+    "dsl": "IF (Person_Leave, )\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on))\nTHEN (Send_Message, Dear {trigger_objectId} please turn off the running device, ) \n\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, oven, oven_working_state), =, on))\nTHEN (Send_Message, Dear {trigger_objectId}  please turn off the running device, ) \n\n",
+    "endTime": "2022-09-30 16:01:36",
+    "app": "#10",
+    "duration": "9.64 min"
+  },
+  {
+    "user": "user13",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:56:39",
+    "app": "#2",
+    "duration": "3.49 min"
+  },
+  {
+    "user": "user10",
+    "dsl": "IF ((Window_On, ), (AC_On, ))\nWHEN (((is trigger_location, all, window, current_window_state), =, on), AND, ((is trigger_location, all, ac, current_ac_state), =, on))\nTHEN (Speak_VoiceMessage, please close the ac or windows, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:25:09",
+    "app": "#6",
+    "duration": "4.1 min"
+  },
+  {
+    "user": "user12",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_On), >, 10)\nTHEN (Speak_VoiceMessage, Please regulate the use of electrical appliances, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:18:46",
+    "app": "#5",
+    "duration": "4.52 min"
+  },
+  {
+    "user": "user11",
+    "dsl": "IF ((Window_On, ), (AC_On, ))\nWHEN (((is trigger_location, any, window, current_window_state), =, on), AND, ((is trigger_location, any, ac, current_ac_state), =, on))\nTHEN (Speak_VoiceMessage, Please close the Windows to avoid wasting the cooling effect of air conditioning, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:26:37",
+    "app": "#6",
+    "duration": "7.56 min"
+  },
+  {
+    "user": "user10",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Entry, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, last 1 min trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), time, Person_Entry Person_Leave), <, 0.5)\nTHEN (Speak_VoiceMessage, do not run fast indoor, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:37:37",
+    "app": "#7",
+    "duration": "12.06 min"
+  },
+  {
+    "user": "user13",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_On), >, 5)\nTHEN (Speak_VoiceMessage, Don't overuse the light, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:19:34",
+    "app": "#5",
+    "duration": "5.12 min"
+  },
+  {
+    "user": "user14",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:58:12",
+    "app": "#2",
+    "duration": "7.49 min"
+  },
+  {
+    "user": "user11",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Leave, last 0.1 min trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), count, Person_Leave), >, 0)\nTHEN (Speak_VoiceMessage, Pay attention to safety, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:40:41",
+    "app": "#7",
+    "duration": "13.62 min"
+  },
+  {
+    "user": "user12",
+    "dsl": "IF (Window_On, )\nWHEN (((is trigger_location, any, window, current_window_state), =, on), OR, ((is trigger_location, any, ac, current_ac_state), =, on))\nTHEN (Speak_VoiceMessage, Turn off window or AC, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:25:08",
+    "app": "#6",
+    "duration": "6.15 min"
+  },
+  {
+    "user": "user10",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, please leave the room, is trigger_location) \n",
+    "endTime": "2022-09-30 15:45:30",
+    "app": "#8",
+    "duration": "7.62 min"
+  },
+  {
+    "user": "user11",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, run away from {trigger_location}, (is trigger_location,is adjacentTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:48:44",
+    "app": "#8",
+    "duration": "7.78 min"
+  },
+  {
+    "user": "user12",
+    "dsl": "IF ((Person_Entry, is meetingroom01,timestamp > 23:30:00), (Person_Entry, is meetingroom02,timestamp > 23:30:00))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, please check the {trigger_location}, ) \n\n",
+    "endTime": "2022-09-30 15:52:21",
+    "app": "#9",
+    "duration": "6.96 min"
+  },
+  {
+    "user": "user14",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_On), >, 15)\nTHEN (Speak_VoiceMessage, Please use electrical appliances properly, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:21:43",
+    "app": "#5",
+    "duration": "6.0 min"
+  },
+  {
+    "user": "user15",
+    "dsl": "IF (Light_On, )\nWHEN ((((Light_On, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Light_On), >, 10)\nTHEN (Speak_VoiceMessage, Use electrical appliances wisely, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:17:26",
+    "app": "#5",
+    "duration": "5.97 min"
+  },
+  {
+    "user": "user13",
+    "dsl": "IF (Person_Entry, is meetingroom01,timestamp > 23:30:00)\nWHEN ((is meetingroom01, people_count), >, 3)\nTHEN (Send_Message, Call in patrols to avoid crowd violations, ) \n\n",
+    "endTime": "2022-09-30 15:52:30",
+    "app": "#9",
+    "duration": "5.32 min"
+  },
+  {
+    "user": "user11",
+    "dsl": "IF (Person_Leave, is tearoom01)\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on))\nTHEN (Send_Message, please inspect the device, ) \n\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, oven, oven_working_state), =, on))\nTHEN (Send_Message, please inspect the device, ) \n\n",
+    "endTime": "2022-09-30 16:02:30",
+    "app": "#10",
+    "duration": "7.92 min"
+  },
+  {
+    "user": "user12",
+    "dsl": "IF (Person_Leave, is tearoom01)\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on))\nTHEN (Send_Message, {trigger_objectId} please come back to the tearoom and inspect the devices, ) \n\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, oven, oven_working_state), =, on))\nTHEN (Send_Message, {trigger_objectId} please come back to the tearoom and inspect the devices, ) \n\n",
+    "endTime": "2022-09-30 16:00:46",
+    "app": "#10",
+    "duration": "8.14 min"
+  },
+  {
+    "user": "user13",
+    "dsl": "IF (Person_Leave, is tearoom01)\nWHEN (((is tearoom01, any, water_dispenser, water_dispenser_working_state), =, on), OR, ((is tearoom01, any, oven, oven_working_state), =, on), AND, ((is tearoom01, people_count), =, 0))\nTHEN (Send_Message, {trigger_objectId} come back to watch, ) \n\n",
+    "endTime": "2022-09-30 16:00:30",
+    "app": "#10",
+    "duration": "7.74 min"
+  },
+  {
+    "user": "user13",
+    "dsl": "IF ((Window_On, ), (AC_On, ))\nWHEN (((is trigger_location, any, window, current_window_state), =, on), AND, ((is trigger_location, any, ac, current_ac_state), =, on))\nTHEN (Speak_VoiceMessage, plz close the window or ac, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:26:55",
+    "app": "#6",
+    "duration": "7.11 min"
+  },
+  {
+    "user": "user14",
+    "dsl": "IF ((Person_Entry, is meetingroom01,timestamp > 23:30:00), (Person_Entry, is meetingroom02,timestamp > 23:30:00))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, please come to {trigger_location} to check the unusual actions, ) \n\n",
+    "endTime": "2022-09-30 15:50:25",
+    "app": "#9",
+    "duration": "5.3 min"
+  },
+  {
+    "user": "user15",
+    "dsl": "IF (Temperature_Change, )\nWHEN (((is trigger_location, temperature), >, 25), ((is trigger_location, all, ac, current_ac_state), =, off), ((is trigger_location, people_count), >, 0))\nTHEN (AC_Turn_On, , is trigger_location) \n\n",
+    "endTime": "2022-09-30 14:56:03",
+    "app": "#2",
+    "duration": "5.57 min"
+  },
+  {
+    "user": "user14",
+    "dsl": "IF ((AC_On, ), (Window_On, ))\nWHEN (((is trigger_location, any, window, current_window_state), =, on), AND, ((is trigger_location, any, ac, current_ac_state), =, on))\nTHEN (Speak_VoiceMessage, please turn off the window or AC, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:25:40",
+    "app": "#6",
+    "duration": "3.83 min"
+  },
+  {
+    "user": "user12",
+    "dsl": "IF (Fire_Alarm, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Speak_VoiceMessage, please run far away from the {trigger_location}, is trigger_location) \n\nWHEN ((is adjacentTo trigger_location, people_count), >, 0)\nTHEN (Speak_VoiceMessage, please run far away from the {trigger_location}, is adjacentTo trigger_location) \n",
+    "endTime": "2022-09-30 15:45:10",
+    "app": "#8",
+    "duration": "7.91 min"
+  },
+  {
+    "user": "user12",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), time, Person_Leave Person_Entry), <, 0.1)\nTHEN (Speak_VoiceMessage, be careful and do not run fast, is trigger_location)\n",
+    "endTime": "2022-09-30 15:36:59",
+    "app": "#7",
+    "duration": "11.48 min"
+  },
+  {
+    "user": "user13",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Entry, last 1 min trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, last 1 min trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), time, Person_Leave Person_Entry), <, 0.5)\nTHEN (Speak_VoiceMessage, please be careful and do not run so far, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:39:58",
+    "app": "#7",
+    "duration": "12.63 min"
+  },
+  {
+    "user": "user13",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, {trigger_objectId} fire detected and go fast, (is trigger_location,is adjacentTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:47:00",
+    "app": "#8",
+    "duration": "6.81 min"
+  },
+  {
+    "user": "user14",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, run fast, (is trigger_location,is adjacentTo trigger_location)) \n\n",
+    "endTime": "2022-09-30 15:44:56",
+    "app": "#8",
+    "duration": "7.81 min"
+  },
+  {
+    "user": "user15",
+    "dsl": "IF ((Window_On, ), (AC_On, ))\nWHEN (((is trigger_location, any, window, current_window_state), =, on), AND, ((is trigger_location, any, ac, current_ac_state), =, on))\nTHEN (Speak_VoiceMessage, please turn off the window or the ac, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:24:25",
+    "app": "#6",
+    "duration": "6.76 min"
+  },
+  {
+    "user": "user15",
+    "dsl": "IF ((Person_Entry, is meetingroom01,timestamp > 23:30:00), (Person_Entry, is meetingroom02,timestamp > 23:30:00))\nWHEN ((is trigger_location, people_count), >, 3)\nTHEN (Send_Message, have a check, ) \n\n",
+    "endTime": "2022-09-30 15:49:38",
+    "app": "#9",
+    "duration": "6.06 min"
+  },
+  {
+    "user": "user15",
+    "dsl": "IF (Fire_Alarm, )\nWHEN (((is trigger_location, people_count), >, 0), OR, ((is adjacentTo trigger_location, people_count), >, 0))\nTHEN (Speak_VoiceMessage, run, is trigger_location) \n\n",
+    "endTime": "2022-09-30 15:43:23",
+    "app": "#8",
+    "duration": "7.23 min"
+  },
+  {
+    "user": "user14",
+    "dsl": "IF (Person_Leave, )\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on))\nTHEN (Send_Message, {trigger_objectId} please go back and supervise the device, ) \n\nWHEN (((is trigger_location, people_count), =, 0), AND, ((is trigger_location, any, oven, oven_working_state), =, on))\nTHEN (Send_Message, {trigger_objectId} please go back and supervise the device, ) ",
+    "endTime": "2022-09-30 15:59:16",
+    "app": "#10",
+    "duration": "8.57 min"
+  },
+  {
+    "user": "user15",
+    "dsl": "IF (Person_Leave, )\nWHEN (((is trigger_location, any, water_dispenser, water_dispenser_working_state), =, on), AND, ((is trigger_location, any, oven, oven_working_state), =, on), OR, ((is trigger_location, people_count), =, 0))\nTHEN (Send_Message, go back to turn off the devices, ) \n\n",
+    "endTime": "2022-09-30 15:56:31",
+    "app": "#10",
+    "duration": "6.65 min"
+  },
+  {
+    "user": "user1",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, Please add the customer in {trigger_location} as VIP, ) \n\n",
+    "duration": "7.64 min",
+    "endTime": "2022-10-04 14:27:57"
+  },
+  {
+    "user": "user2",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, Please add customer in {trigger_location} as VIP, ) \n\n",
+    "duration": "6.21 min",
+    "endTime": "2022-10-04 14:26:29"
+  },
+  {
+    "user": "user3",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, Please add the customer {trigger_objectId} in {trigger_location} as VIP, ) \n\n",
+    "duration": "8.01 min",
+    "endTime": "2022-10-04 14:28:20"
+  },
+  {
+    "user": "user4",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, Please add the customer in {trigger_location} as VIP, ) \n\n",
+    "duration": "7.11 min",
+    "endTime": "2022-10-04 14:27:24"
+  },
+  {
+    "user": "user5",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, Please upgrade customer{trigger_objectId} in {trigger_location} to VIP, ) \n\n",
+    "duration": "6.44 min",
+    "endTime": "2022-10-04 14:26:43"
+  },
+  {
+    "user": "user6",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, upgrade the customer in {trigger_location} as VIP, ) \n\n",
+    "duration": "7.83 min",
+    "endTime": "2022-10-04 14:28:09"
+  },
+  {
+    "user": "user7",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, add {trigger_objectId} as VIP, ) \n\n",
+    "duration": "6.18 min",
+    "endTime": "2022-10-04 14:26:27"
+  },
+  {
+    "user": "user8",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, add customer in {trigger_location} to VIP, ) \n\n",
+    "duration": "9.88 min",
+    "endTime": "2022-10-04 14:30:16"
+  },
+  {
+    "user": "user9",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, update the nonVip customer in {trigger_location} to VIP, ) \n\n",
+    "duration": "10.16 min",
+    "endTime": "2022-10-04 14:30:33"
+  },
+  {
+    "user": "user10",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), >, 3)\nTHEN (Notify_Waiter, add customer {trigger_objectId} in {trigger_location} to VIP, ) \n\n",
+    "duration": "8.65 min",
+    "endTime": "2022-10-04 14:29:00"
+  },
+  {
+    "user": "user11",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, add the nonVip customer {trigger_objectId} in {trigger_location} to VIP, ) \n\n",
+    "duration": "10.72 min",
+    "endTime": "2022-10-04 14:31:08"
+  },
+  {
+    "user": "user12",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, make the customer {trigger_objectId} in {trigger_location} to VIP, ) \n\n",
+    "duration": "6.2 min",
+    "endTime": "2022-10-04 14:26:28"
+  },
+  {
+    "user": "user13",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), >, 4)\nTHEN (Notify_Waiter, add the nonVip customer {trigger_objectId} in {trigger_location} to VIP, ) \n\n",
+    "duration": "8.23 min",
+    "endTime": "2022-10-04 14:28:34"
+  },
+  {
+    "user": "user15",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), >, 4)\nTHEN (Notify_Waiter, make the nonVip customer {trigger_objectId} as VIP., ) \n\n",
+    "duration": "9.25 min",
+    "endTime": "2022-10-04 14:29:37"
+  },
+  {
+    "user": "user1",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, is DiningArea)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, Please go to the {trigger_location} for cleaning, ) \n\n",
+    "duration": "7.61 min",
+    "endTime": "2022-10-04 14:35:49"
+  },
+  {
+    "user": "user2",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, is DiningArea)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, Please go to the {trigger_location} for cleaning., ) \n\n",
+    "duration": "8.66 min",
+    "endTime": "2022-10-04 14:35:25"
+  },
+  {
+    "user": "user3",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, is DiningArea)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), >, 0)\nTHEN (Notify_Waiter, clean the {trigger_location}, ) \n\n",
+    "duration": "7.96 min",
+    "endTime": "2022-10-04 14:36:34"
+  },
+  {
+    "user": "user4",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, is DiningArea)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, Go to {trigger_location} for cleaning, ) \n\n",
+    "duration": "7.17 min",
+    "endTime": "2022-10-04 14:34:49"
+  },
+  {
+    "user": "user5",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, )\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, Please go to the {trigger_location} to clean , ) \n\n",
+    "duration": "8.56 min",
+    "endTime": "2022-10-04 14:35:34"
+  },
+  {
+    "user": "user6",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, is DiningArea)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), >, 0)\nTHEN (Notify_Waiter, Please clean the {trigger_location}, ) \n\n",
+    "duration": "9.98 min",
+    "endTime": "2022-10-04 14:38:28"
+  },
+  {
+    "user": "user7",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, )\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, clean the {trigger_location}, ) \n\n",
+    "duration": "8.11 min",
+    "endTime": "2022-10-04 14:34:49"
+  },
+  {
+    "user": "user8",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, is DiningArea)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), >, 1)\nTHEN (Notify_Waiter, go to the {trigger_location} for cleaning, ) \n\n",
+    "duration": "10.81 min",
+    "endTime": "2022-10-04 14:41:26"
+  },
+  {
+    "user": "user9",
+    "app": "#12",
+    "dsl": "IF (Person_Leave,)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, Clean the {trigger_location} please, ) \n\n",
+    "duration": "7.28 min",
+    "endTime": "2022-10-04 14:38:05"
+  },
+  {
+    "user": "user10",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, is DiningArea)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, The customer has left the {trigger_location} and please clean the table, ) \n\n",
+    "duration": "9.3 min",
+    "endTime": "2022-10-04 14:38:36"
+  },
+  {
+    "user": "user11",
+    "app": "#12",
+    "dsl": "IF (Person_Leave,  is DiningArea)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, Please clean the table in {trigger_location}, ) \n\n",
+    "duration": "11.18 min",
+    "endTime": "2022-10-04 14:42:41"
+  },
+  {
+    "user": "user12",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, )\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, The customer has left please clean the table, ) \n\n",
+    "duration": "9.54 min",
+    "endTime": "2022-10-04 14:36:19"
+  },
+  {
+    "user": "user13",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, )\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), >, 0)\nTHEN (Notify_Waiter, Please clean the table, ) \n\n",
+    "duration": "8.31 min",
+    "endTime": "2022-10-04 14:37:09"
+  },
+  {
+    "user": "user14",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, is DiningArea)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, The customer has left {trigger_location} so clean the table please, ) \n\n",
+    "duration": "10.14 min",
+    "endTime": "2022-10-04 14:40:19"
+  },
+  {
+    "user": "user15",
+    "app": "#12",
+    "dsl": "IF (Person_Leave, is DiningArea)\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), seq_match, Make_Order Check_Out), =, 1)\nTHEN (Notify_Waiter, Please clean the table in {trigger_location}, ) \n\n",
+    "duration": "8.07 min",
+    "endTime": "2022-10-04 14:37:57"
+  },
+  {
+    "user": "user1",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), =, 1)\nTHEN (Speak_VoiceMessage, Please take your belongings with you, is trigger_location) \n\n",
+    "duration": "10.91 min",
+    "endTime": "2022-10-04 14:47:05"
+  },
+  {
+    "user": "user3",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), =, 1)\nTHEN (Speak_VoiceMessage, take care of your belongings, is trigger_location) \n\n",
+    "duration": "10.97 min",
+    "endTime": "2022-10-04 14:47:54"
+  },
+  {
+    "user": "user4",
+    "app": "#13",
+    "dsl": "IF (Person_Entry,  is EntranceArea)\nWHEN ((((Person_Entry, last 1 min trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), >, 0)\nTHEN (Speak_VoiceMessage, Please take your Personal belongings with you, is trigger_location) \n\n",
+    "duration": "7.88 min",
+    "endTime": "2022-10-04 14:42:57"
+  },
+  {
+    "user": "user5",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), =, 1)\nTHEN (Speak_VoiceMessage, take care of your belongings, is trigger_location) \n\n",
+    "duration": "10.11 min",
+    "endTime": "2022-10-04 14:46:00"
+  },
+  {
+    "user": "user6",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 min trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), >, 0)\nTHEN (Speak_VoiceMessage, do not forget your belongings, is trigger_location) \n\n",
+    "duration": "9.27 min",
+    "endTime": "2022-10-04 14:48:02"
+  },
+  {
+    "user": "user7",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), =, 1)\nTHEN (Speak_VoiceMessage, Please take your belongings, is trigger_location) \n\n",
+    "duration": "10.37 min",
+    "endTime": "2022-10-04 14:45:32"
+  },
+  {
+    "user": "user8",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), =, 1)\nTHEN (Speak_VoiceMessage, take care of your personal property, is trigger_location) \n\n",
+    "duration": "12.64 min",
+    "endTime": "2022-10-04 14:54:30"
+  },
+  {
+    "user": "user9",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 0.1 min trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 0.3 min trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), >, 0)\nTHEN (Speak_VoiceMessage, Please take your personal property, is trigger_location) \n\n",
+    "duration": "9.4 min",
+    "endTime": "2022-10-04 14:47:48"
+  },
+  {
+    "user": "user10",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), =, 1)\nTHEN (Speak_VoiceMessage, Please take your personal property before you leave, is trigger_location) \n\n",
+    "duration": "11.28 min",
+    "endTime": "2022-10-04 14:50:16"
+  },
+  {
+    "user": "user2",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), =, 1)\nTHEN (Speak_VoiceMessage, please take your personal property with you, is trigger_location) \n\n",
+    "duration": "10.01 min",
+    "endTime": "2022-10-04 14:45:46"
+  },
+  {
+    "user": "user11",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 0.2 min trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 0.5 min trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 5 min trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), >, 0)\nTHEN (Speak_VoiceMessage, Please take care of your personal property before you leave, is trigger_location) \n\n",
+    "duration": "10.73 min",
+    "endTime": "2022-10-04 14:53:47"
+  },
+  {
+    "user": "user12",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), =, 1)\nTHEN (Speak_VoiceMessage, do not forget your personal property when you leave, is trigger_location) \n\n",
+    "duration": "9.87 min",
+    "endTime": "2022-10-04 14:46:31"
+  },
+  {
+    "user": "user13",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 0.1 min trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 0.1 min trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 3 min trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), >, 0)\nTHEN (Speak_VoiceMessage, Please take your personal property with you before you leave, is trigger_location) \n\n",
+    "duration": "7.52 min",
+    "endTime": "2022-10-04 14:44:55"
+  },
+  {
+    "user": "user14",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), =, 1)\nTHEN (Speak_VoiceMessage, Take care if your personal property when you leave, is trigger_location) \n\n",
+    "duration": "9.28 min",
+    "endTime": "2022-10-04 14:49:55"
+  },
+  {
+    "user": "user15",
+    "app": "#13",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId),(Check_Out, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Check_Out Person_Leave Person_Entry), =, 1)\nTHEN (Speak_VoiceMessage, Do not left your personal belongings, is trigger_location) \n\n",
+    "duration": "7.91 min",
+    "endTime": "2022-10-04 14:46:08"
+  },
+  {
+    "user": "user1",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Person_Leave Person_Entry), =, 1))\nTHEN (Speak_VoiceMessage, Thank you for consuming today, is trigger_location) \n\n",
+    "duration": "6.94 min",
+    "endTime": "2022-10-04 14:54:16"
+  },
+  {
+    "user": "user2",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Entry, last 1 min trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Person_Leave Person_Entry), >, 0))\nTHEN (Speak_VoiceMessage, Thanks for your consuming, is trigger_location) \n\n",
+    "duration": "6.95 min",
+    "endTime": "2022-10-04 14:52:57"
+  },
+  {
+    "user": "user3",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Leave, last 0.3 min trigger_timestamp, is DiningArea, is trigger_objectId)), count, Person_Leave), >, 0))\nTHEN (Speak_VoiceMessage, Thanks for consuming, is trigger_location) \n\n",
+    "duration": "5.97 min",
+    "endTime": "2022-10-04 14:54:04"
+  },
+  {
+    "user": "user4",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Entry, last 1 min trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Person_Leave Person_Entry), >, 0))\nTHEN (Speak_VoiceMessage, Thank you for consuming today, is trigger_location) \n\n",
+    "duration": "7.96 min",
+    "endTime": "2022-10-04 14:51:11"
+  },
+  {
+    "user": "user5",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Leave, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), count, Person_Leave), >, 0))\nTHEN (Speak_VoiceMessage, Thanks for consuming, is trigger_location) \n\n",
+    "duration": "7.11 min",
+    "endTime": "2022-10-04 14:53:21"
+  },
+  {
+    "user": "user6",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Leave, last 0.5 min trigger_timestamp, is DiningArea, is trigger_objectId)), count, Person_Leave), >, 0))\nTHEN (Speak_VoiceMessage, Thank you for consuming, is trigger_location) \n\n",
+    "duration": "8.35 min",
+    "endTime": "2022-10-04 14:56:40"
+  },
+  {
+    "user": "user7",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Entry, last 1 min trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Person_Leave Person_Entry), >, 0))\nTHEN (Speak_VoiceMessage, Thank you for consuming today, is trigger_location) \n\n",
+    "duration": "7.41 min",
+    "endTime": "2022-10-04 14:53:12"
+  },
+  {
+    "user": "user8",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Entry, last 1 times trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Person_Leave Person_Entry), =, 1))\nTHEN (Speak_VoiceMessage, Thanks for consuming, is trigger_location) \n\n",
+    "duration": "6.02 min",
+    "endTime": "2022-10-04 15:00:43"
+  },
+  {
+    "user": "user9",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Entry, last 1 min trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Person_Leave Person_Entry), >, 0))\nTHEN (Speak_VoiceMessage, Thank you for consuming today and look forward to seeing you next time, is trigger_location) \n\n",
+    "duration": "5.75 min",
+    "endTime": "2022-10-04 14:53:44"
+  },
+  {
+    "user": "user10",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Leave, last 0.5 min trigger_timestamp, is DiningArea, is trigger_objectId)), count, Person_Leave), >, 0))\nTHEN (Speak_VoiceMessage, Thank you for consuming, is trigger_location) \n\n",
+    "duration": "7.36 min",
+    "endTime": "2022-10-04 14:57:52"
+  },
+  {
+    "user": "user11",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Leave, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), count, Person_Leave), >, 0))\nTHEN (Speak_VoiceMessage, Thanks for consuming today, is trigger_location) \n\n",
+    "duration": "6.38 min",
+    "endTime": "2022-10-04 15:00:22"
+  },
+  {
+    "user": "user12",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Leave, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), count, Person_Leave), >, 0))\nTHEN (Speak_VoiceMessage, Thank you for consuming, is trigger_location) \n\n",
+    "duration": "8.16 min",
+    "endTime": "2022-10-04 14:54:57"
+  },
+  {
+    "user": "user13",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Entry, last 0.5 min trigger_timestamp, is EntranceArea, is trigger_objectId),(Person_Leave, last 0.5 min trigger_timestamp, is DiningArea, is trigger_objectId)), seq_match, Person_Leave Person_Entry), >, 0))\nTHEN (Speak_VoiceMessage, Thank you for consuming and looking forward to seeing you next time, is trigger_location) \n\n",
+    "duration": "6.39 min",
+    "endTime": "2022-10-04 14:51:31"
+  },
+  {
+    "user": "user14",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Leave, last 0.5 min trigger_timestamp, is DiningArea, is trigger_objectId)), count, Person_Leave), >, 0))\nTHEN (Speak_VoiceMessage, Thank you for consuming today, is trigger_location) \n\n",
+    "duration": "5.8 min",
+    "endTime": "2022-10-04 14:55:54"
+  },
+  {
+    "user": "user15",
+    "app": "#14",
+    "dsl": "IF (Person_Entry, is EntranceArea)\nWHEN (((((Check_Out, today trigger_timestamp, is DiningArea, is trigger_objectId)), count, Check_Out), >, 0), AND, ((((Person_Leave, last 1 min trigger_timestamp, is DiningArea, is trigger_objectId)), count, Person_Leave), >, 0))\nTHEN (Speak_VoiceMessage, Thank you for your consuming, is trigger_location) \n\n",
+    "duration": "7.6 min",
+    "endTime": "2022-10-04 14:53:59"
+  },
+  {
+    "user": "user1",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 180), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 225), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 270))\nTHEN (Notify_Waiter, Please check the remaining coffee materials of {trigger_objectId}, ) \n\n",
+    "duration": "4.21 min",
+    "endTime": "2022-10-04 14:58:37"
+  },
+  {
+    "user": "user2",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 180))\nTHEN (Notify_Waiter, Please add materials of {trigger_objectId}, ) \n\n",
+    "duration": "5.18 min",
+    "endTime": "2022-10-04 14:58:18"
+  },
+  {
+    "user": "user3",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90))\nTHEN (Notify_Waiter, Check the remaining materials of coffee machine {trigger_objectId}, ) \n\n",
+    "duration": "3.89 min",
+    "endTime": "2022-10-04 14:58:05"
+  },
+  {
+    "user": "user4",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 180), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 225))\nTHEN (Notify_Waiter, Please check {trigger_objectId}, ) \n\n",
+    "duration": "2.92 min",
+    "endTime": "2022-10-04 14:54:12"
+  },
+  {
+    "user": "user5",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45)\nTHEN (Notify_Waiter, Please check {trigger_objectId}, ) \n\n",
+    "duration": "4.5 min",
+    "endTime": "2022-10-04 14:58:00"
+  },
+  {
+    "user": "user6",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 180))\nTHEN (Notify_Waiter, Please add coffee materials of machine {trigger_objectId}, ) \n\n",
+    "duration": "5.09 min",
+    "endTime": "2022-10-04 15:01:56"
+  },
+  {
+    "user": "user7",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 180), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 225), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 270))\nTHEN (Notify_Waiter, Please add coffee materials for coffee machine {trigger_objectId} in time, ) \n\n",
+    "duration": "3.57 min",
+    "endTime": "2022-10-04 14:56:53"
+  },
+  {
+    "user": "user8",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 180))\nTHEN (Notify_Waiter, Please check the materials in coffee machine {trigger_objectId}, ) \n\n",
+    "duration": "5.28 min",
+    "endTime": "2022-10-04 15:06:11"
+  },
+  {
+    "user": "user9",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135))\nTHEN (Notify_Waiter, Please check the raw materials in coffee machine {trigger_objectId}, ) \n\n",
+    "duration": "4.88 min",
+    "endTime": "2022-10-04 14:58:47"
+  },
+  {
+    "user": "user10",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45)\nTHEN (Notify_Waiter, Please add materials for coffee machine {trigger_objectId}, ) \n\n",
+    "duration": "4.24 min",
+    "endTime": "2022-10-04 15:02:15"
+  },
+  {
+    "user": "user11",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 180))\nTHEN (Notify_Waiter, add materials for coffee machine {trigger_objectId}, ) \n\n",
+    "duration": "2.62 min",
+    "endTime": "2022-10-04 15:03:05"
+  },
+  {
+    "user": "user12",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 180), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 225), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 270))\nTHEN (Notify_Waiter, Insufficient surplus materials of coffee machine {trigger_objectId}, ) \n\n",
+    "duration": "5.35 min",
+    "endTime": "2022-10-04 15:00:29"
+  },
+  {
+    "user": "user13",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 180), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 225), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 270))\nTHEN (Notify_Waiter, Please check the coffee beans of the coffee machine {trigger_objectId}, ) \n\n",
+    "duration": "7.78 min",
+    "endTime": "2022-10-04 14:59:34"
+  },
+  {
+    "user": "user14",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 135))\nTHEN (Notify_Waiter, Please add coffee beans for the coffee machine {trigger_objectId} in time, ) \n\n",
+    "duration": "4.46 min",
+    "endTime": "2022-10-04 15:00:31"
+  },
+  {
+    "user": "user15",
+    "app": "#15",
+    "dsl": "IF (Coffee_Done, )\nWHEN (((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 45), OR, ((((Coffee_Done, today trigger_timestamp, , is trigger_objectId)), count, Coffee_Done), =, 90))\nTHEN (Notify_Waiter, Please check coffee beans of {trigger_objectId}, ) \n\n",
+    "duration": "5.34 min",
+    "endTime": "2022-10-04 14:59:30"
+  },
+  {
+    "user": "user1",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry for your waiting, objectID is deliver_robot_01) \n\n",
+    "duration": "6.62 min",
+    "endTime": "2022-10-04 15:05:27"
+  },
+  {
+    "user": "user2",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry to have kept you waiting for so long, objectID is deliver_robot_01) \n\n\n",
+    "duration": "6.69 min",
+    "endTime": "2022-10-04 15:05:13"
+  },
+  {
+    "user": "user3",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry for waiting so long, objectID is deliver_robot_01) \n\n",
+    "duration": "6.59 min",
+    "endTime": "2022-10-04 15:04:54"
+  },
+  {
+    "user": "user4",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry for your waiting, objectID is deliver_robot_01) \n\n",
+    "duration": "6.74 min",
+    "endTime": "2022-10-04 15:01:10"
+  },
+  {
+    "user": "user5",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry to have kept you waiting, objectID is deliver_robot_01) \n\n",
+    "duration": "6.62 min",
+    "endTime": "2022-10-04 15:04:51"
+  },
+  {
+    "user": "user6",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry to keep you waiting, objectID is deliver_robot_01) \n\n\n",
+    "duration": "7.45 min",
+    "endTime": "2022-10-04 15:09:38"
+  },
+  {
+    "user": "user7",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry for the waiting, objectID is deliver_robot_01) \n\n\n",
+    "duration": "5.92 min",
+    "endTime": "2022-10-04 15:03:00"
+  },
+  {
+    "user": "user8",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry for your waiting, objectID is deliver_robot_01) \n\n\n",
+    "duration": "6.54 min",
+    "endTime": "2022-10-04 15:12:56"
+  },
+  {
+    "user": "user9",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry to have kept you waiting so long, objectID is deliver_robot_01) \n",
+    "duration": "6.99 min",
+    "endTime": "2022-10-04 15:06:00"
+  },
+  {
+    "user": "user10",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, So sorry to have kept you waiting, objectID is deliver_robot_01) \n",
+    "duration": "6.27 min",
+    "endTime": "2022-10-04 15:08:44"
+  },
+  {
+    "user": "user11",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)),(Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry for your waiting and hope you will enjoy your drink, objectID is deliver_robot_01) \n\n",
+    "duration": "7.67 min",
+    "endTime": "2022-10-04 15:11:00"
+  },
+  {
+    "user": "user12",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Make_Order, last 10 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Make_Order), =, 0)\nTHEN (Speak_VoiceMessage, Sorry for your waiting , objectID is deliver_robot_01) \n",
+    "duration": "6.85 min",
+    "endTime": "2022-10-04 15:07:34"
+  },
+  {
+    "user": "user13",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)),(Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry for waiting, objectID is deliver_robot_01) \n",
+    "duration": "6.85 min",
+    "endTime": "2022-10-04 15:06:38"
+  },
+  {
+    "user": "user14",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Make_Order, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId)),(Order_Delivered, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId), time, Make_Order Order_Delivered), >, 10)\nTHEN (Speak_VoiceMessage, Sorry for your waiting, objectID is deliver_robot_01) \n",
+    "duration": "6.24 min",
+    "endTime": "2022-10-04 15:06:58"
+  },
+  {
+    "user": "user15",
+    "app": "#16",
+    "dsl": "IF (Order_Delivered, )\nWHEN ((((Make_Order, last 10 min trigger_timestamp, is trigger_location, is trigger_objectId)), count, Make_Order), =, 0)\nTHEN (Speak_VoiceMessage, Sorry for your waiting and hope you have a good day, objectID is deliver_robot_01) \n",
+    "duration": "7.93 min",
+    "endTime": "2022-10-04 15:07:42"
+  },
+  {
+    "user": "user1",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN (((((Person_Entry, this week trigger_timestamp, is EntranceArea, is trigger_objectId)), count, Person_Entry), =, 1), AND, ((((Person_Leave, this week trigger_timestamp, is EntranceArea, is trigger_objectId)), count, Person_Leave), =, 0))\nTHEN (Robot_Guiding, {trigger_location}:Welcome, objectId is guiding_robot_01) \n\n",
+    "duration": "4.76 min",
+    "endTime": "2022-10-04 15:10:22"
+  },
+  {
+    "user": "user2",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Entry, this week trigger_timestamp, is EntranceArea, is trigger_objectId)), count, Person_Entry), =, 1)\nTHEN (Robot_Guiding, {trigger_location}:Long time no see, ) \n",
+    "duration": "7.31 min",
+    "endTime": "2022-10-04 15:12:46"
+  },
+  {
+    "user": "user3",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN (((((Person_Entry, this week trigger_timestamp, , is trigger_objectId)), count, Person_Entry), =, 1), AND, ((((Person_Leave, this week trigger_timestamp, , is trigger_objectId)), count, Person_Leave), =, 0))\nTHEN (Robot_Guiding, {trigger_location}:Welcome to coffee house, objectId is guiding_robot_01) \n",
+    "duration": "5.99 min",
+    "endTime": "2022-10-04 15:11:05"
+  },
+  {
+    "user": "user4",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Entry, this week trigger_timestamp, , is trigger_objectId)), count, Person_Entry), =, 1)\nTHEN (Robot_Guiding, {trigger_location}:Welcome my dear {trigger_objectId}, objectId is guiding_robot_01) \n\n",
+    "duration": "5.68 min",
+    "endTime": "2022-10-04 15:07:02"
+  },
+  {
+    "user": "user5",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Leave, this week trigger_timestamp, , is trigger_objectId)), count, Person_Leave), =, 0)\nTHEN (Robot_Guiding, {trigger_location}:Happy to see you again, ) \n",
+    "duration": "6.41 min",
+    "endTime": "2022-10-04 15:11:28"
+  },
+  {
+    "user": "user6",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN (((((Person_Entry, this week trigger_timestamp, , is trigger_objectId)), count, Person_Entry), =, 1), AND, ((((Person_Leave, this week trigger_timestamp, , is trigger_objectId)), count, Person_Leave), =, 0))\nTHEN (Robot_Guiding, {trigger_location}:Welcome back, objectId is guiding_robot_01) \n\n",
+    "duration": "4.84 min",
+    "endTime": "2022-10-04 15:14:38"
+  },
+  {
+    "user": "user7",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Leave, this week trigger_timestamp, , is trigger_objectId)), count, Person_Leave), =, 0)\nTHEN (Robot_Guiding, {trigger_location}:Hello my dear {trigger_objectId}, ) \n",
+    "duration": "4.64 min",
+    "endTime": "2022-10-04 15:07:48"
+  },
+  {
+    "user": "user8",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Entry, this week trigger_timestamp, is EntranceArea, is trigger_objectId)), count, Person_Entry), =, 1)\nTHEN (Robot_Guiding, {trigger_location}:Welcome to our coffee house again, ) \n",
+    "duration": "6.72 min",
+    "endTime": "2022-10-04 15:19:53"
+  },
+  {
+    "user": "user9",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Entry, this week trigger_timestamp, , is trigger_objectId)), count, Person_Entry), =, 1)\nTHEN (Robot_Guiding, {trigger_location}:Nice to see you again, ) \n",
+    "duration": "7.32 min",
+    "endTime": "2022-10-04 15:13:34"
+  },
+  {
+    "user": "user10",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Entry, this week trigger_timestamp, is EntranceArea, is trigger_objectId)), count, Person_Entry), =, 1)\nTHEN (Robot_Guiding, {trigger_location}:Welcome, ) \n",
+    "duration": "6.18 min",
+    "endTime": "2022-10-04 15:15:07"
+  },
+  {
+    "user": "user11",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Leave, this week trigger_timestamp, , is trigger_objectId)), count, Person_Leave), =, 0)\nTHEN (Robot_Guiding, {trigger_location}:Welcome to coffee house again, objectId is guiding_robot_01) \n",
+    "duration": "6.82 min",
+    "endTime": "2022-10-04 15:18:03"
+  },
+  {
+    "user": "user12",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN (((((Person_Entry, this week trigger_timestamp, , is trigger_objectId)), count, Person_Entry), =, 1), AND, ((((Person_Leave, this week trigger_timestamp, , is trigger_objectId)), count, Person_Leave), =, 0))\nTHEN (Robot_Guiding, {trigger_location}:Welcome back again, ) \n\n",
+    "duration": "7.62 min",
+    "endTime": "2022-10-04 15:15:26"
+  },
+  {
+    "user": "user13",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Entry, this week trigger_timestamp, is EntranceArea, is trigger_objectId)), count, Person_Entry), =, 1)\nTHEN (Robot_Guiding, {trigger_location}:Nice to see you again and wish you have a good day, ) \n",
+    "duration": "5.24 min",
+    "endTime": "2022-10-04 15:12:03"
+  },
+  {
+    "user": "user14",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Leave, this week trigger_timestamp, is EntranceArea, is trigger_objectId)), count, Person_Leave), =, 0)\nTHEN (Robot_Guiding, {trigger_location}:Welcome back again, objectId is guiding_robot_01) \n",
+    "duration": "7.83 min",
+    "endTime": "2022-10-04 15:15:03"
+  },
+  {
+    "user": "user15",
+    "app": "#17",
+    "dsl": "IF (Person_Entry, is EntranceArea, objectId is vip)\nWHEN ((((Person_Leave, this week trigger_timestamp, , is trigger_objectId)), count, Person_Leave), =, 0)\nTHEN (Robot_Guiding, {trigger_location}:Welcome back my dear {trigger_objectId}, objectId is guiding_robot_01) \n",
+    "duration": "6.88 min",
+    "endTime": "2022-10-04 15:14:48"
+  },
+  {
+    "user": "user1",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, Please go to {trigger_location} for cleaning, ) \n\n",
+    "duration": "6.83 min",
+    "endTime": "2022-10-04 15:17:26"
+  },
+  {
+    "user": "user2",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, {trigger_location} need cleaning, ) \n\n",
+    "duration": "5.05 min",
+    "endTime": "2022-10-04 15:17:59"
+  },
+  {
+    "user": "user3",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, Please clean the {trigger_location}, ) \n\n",
+    "duration": "5.89 min",
+    "endTime": "2022-10-04 15:17:10"
+  },
+  {
+    "user": "user4",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, water leak happened in {trigger_location}, ) \n\n",
+    "duration": "4.26 min",
+    "endTime": "2022-10-04 15:11:26"
+  },
+  {
+    "user": "user5",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, Please clean the table in {trigger_location}, ) \n\n",
+    "duration": "6.3 min",
+    "endTime": "2022-10-04 15:17:59"
+  },
+  {
+    "user": "user6",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, please clean the {trigger_location}, ) \n\n",
+    "duration": "6.36 min",
+    "endTime": "2022-10-04 15:21:12"
+  },
+  {
+    "user": "user7",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, Drinks spilled on the table in the {trigger_location}, ) \n\n",
+    "duration": "4.59 min",
+    "endTime": "2022-10-04 15:12:32"
+  },
+  {
+    "user": "user8",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, Please clean the table and change the tablecloth of {trigger_location}, ) \n\n",
+    "duration": "7.02 min",
+    "endTime": "2022-10-04 15:27:08"
+  },
+  {
+    "user": "user9",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, Water spilled in the {trigger_location}, ) \n\n",
+    "duration": "4.54 min",
+    "endTime": "2022-10-04 15:18:15"
+  },
+  {
+    "user": "user10",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, A drink spilling is detected in the {trigger_location}, ) \n\n",
+    "duration": "5.96 min",
+    "endTime": "2022-10-04 15:21:16"
+  },
+  {
+    "user": "user11",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, Please clean the {trigger_location} as soon as possible, ) \n\n",
+    "duration": "4.89 min",
+    "endTime": "2022-10-04 15:23:06"
+  },
+  {
+    "user": "user12",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, water leak is detected in {trigger_location}, ) \n\n",
+    "duration": "4.16 min",
+    "endTime": "2022-10-04 15:19:44"
+  },
+  {
+    "user": "user13",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, Drinks spilled on the table in the {trigger_location}, ) \n\n",
+    "duration": "5.19 min",
+    "endTime": "2022-10-04 15:17:25"
+  },
+  {
+    "user": "user14",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, Please clean the {trigger_location} in time, ) \n\n",
+    "duration": "3.46 min",
+    "endTime": "2022-10-04 15:18:38"
+  },
+  {
+    "user": "user15",
+    "app": "#18",
+    "dsl": "IF (Water_Leak, )\nTHEN (Notify_Waiter, Clean the table in {trigger_location}, ) \n\n",
+    "duration": "2.95 min",
+    "endTime": "2022-10-04 15:17:51"
+  },
+  {
+    "user": "user1",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Notify_Waiter, Please remind the people in {trigger_location} not to make too much noise, ) \n\n",
+    "duration": "7.36 min",
+    "endTime": "2022-10-04 15:25:02"
+  },
+  {
+    "user": "user2",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Notify_Waiter, Remind the people in {trigger_location} to be quiet, ) \n\n",
+    "duration": "7.52 min",
+    "endTime": "2022-10-04 15:25:45"
+  },
+  {
+    "user": "user3",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Notify_Waiter, Please go to {trigger_location} and remind the consumer not to make too much noise, ) \n\n",
+    "duration": "7.29 min",
+    "endTime": "2022-10-04 15:24:42"
+  },
+  {
+    "user": "user4",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nTHEN (Notify_Waiter, Please remind the people in {trigger_location} not making too much noise., ) \n\n",
+    "duration": "8.21 min",
+    "endTime": "2022-10-04 15:19:55"
+  },
+  {
+    "user": "user5",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Notify_Waiter, Too noisy in {trigger_location}, ) \n\n",
+    "duration": "6.97 min",
+    "endTime": "2022-10-04 15:25:11"
+  },
+  {
+    "user": "user6",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Notify_Waiter, noise is detected in {trigger_location}, ) \n\n",
+    "duration": "7.89 min",
+    "endTime": "2022-10-04 15:29:21"
+  },
+  {
+    "user": "user7",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Notify_Waiter, The people in {trigger_location} is too noisy, ) \n\n",
+    "duration": "7.45 min",
+    "endTime": "2022-10-04 15:20:14"
+  },
+  {
+    "user": "user8",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 1)\nTHEN (Notify_Waiter, Please remind the people in the {trigger_location} do not talk too loud, ) \n\n",
+    "duration": "4.83 min",
+    "endTime": "2022-10-04 15:32:07"
+  },
+  {
+    "user": "user9",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nTHEN (Notify_Waiter, Noise is detected in {trigger_location}, ) \n\n",
+    "duration": "7.93 min",
+    "endTime": "2022-10-04 15:26:27"
+  },
+  {
+    "user": "user10",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Notify_Waiter, Please remind the people in the {trigger_location} to keep quiet, ) \n\n",
+    "duration": "4.95 min",
+    "endTime": "2022-10-04 15:26:23"
+  },
+  {
+    "user": "user11",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Notify_Waiter, Remind the people in the {trigger_location} not making too much noise, ) \n\n",
+    "duration": "6.77 min",
+    "endTime": "2022-10-04 15:30:06"
+  },
+  {
+    "user": "user12",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Notify_Waiter, Please go to the {trigger_location} and remind the consumer to be quiet, ) \n\n",
+    "duration": "6.38 min",
+    "endTime": "2022-10-04 15:26:20"
+  },
+  {
+    "user": "user13",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nTHEN (Notify_Waiter,{trigger_location} is too noisy, ) \n\n",
+    "duration": "10.23 min",
+    "endTime": "2022-10-04 15:27:59"
+  },
+  {
+    "user": "user14",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 0)\nTHEN (Notify_Waiter, Please remind the consumer in {trigger_location} being quiet, ) \n\n",
+    "duration": "6.29 min",
+    "endTime": "2022-10-04 15:25:08"
+  },
+  {
+    "user": "user15",
+    "app": "#19",
+    "dsl": "IF (Noisy_Detected, )\nWHEN ((is trigger_location, people_count), >, 1)\nTHEN (Notify_Waiter, Please remind consumers in {trigger_location} to speak in a low voice, ) \n\n",
+    "duration": "4.3 min",
+    "endTime": "2022-10-04 15:22:18"
+  },
+  {
+    "user": "user1",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 20 min trigger_timestamp, is trigger_location, )), count, AC_On), =, 0))\nTHEN (AC_Turn_Off, , is trigger_location)\n\n",
+    "duration": "9.48 min",
+    "endTime": "2022-10-04 15:34:50"
+  },
+  {
+    "user": "user2",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, all, ac, current_ac_state), =, on)), AND, ((((AC_On, last 20 min trigger_timestamp, is trigger_location, )), count, AC_On), =, 0))\nTHEN (AC_Turn_Off, , is trigger_location)\n\n",
+    "duration": "10.98 min",
+    "endTime": "2022-10-04 15:37:06"
+  },
+  {
+    "user": "user3",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, , ac, current_ac_state), =, on)), AND, ((((AC_On, last 1 times trigger_timestamp, is trigger_location, ),(Temperature_Change, last 1 times trigger_timestamp, is trigger_location, )), time, AC_On Temperature_Change), >, 20))\nTHEN (AC_Turn_Off, , is trigger_location) \n",
+    "duration": "8.13 min",
+    "endTime": "2022-10-04 15:33:06"
+  },
+  {
+    "user": "user4",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 20 min trigger_timestamp, is trigger_location, )), count, AC_On), <, 1))\nTHEN (AC_Turn_Off, , is trigger_location)\n\n",
+    "duration": "6.66 min",
+    "endTime": "2022-10-04 15:26:48"
+  },
+  {
+    "user": "user5",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 1 times trigger_timestamp, is trigger_location, ),(Temperature_Change, last 1 times trigger_timestamp, is trigger_location, )), time, AC_On Temperature_Change), >, 20))\nTHEN (AC_Turn_Off, , is trigger_location) \n",
+    "duration": "7.82 min",
+    "endTime": "2022-10-04 15:33:16"
+  },
+  {
+    "user": "user6",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 20 min trigger_timestamp, is trigger_location, )), count, AC_On), =, 0))\nTHEN (AC_Turn_Off, , is trigger_location)",
+    "duration": "7.85 min",
+    "endTime": "2022-10-04 15:37:28"
+  },
+  {
+    "user": "user7",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 1 times trigger_timestamp, is trigger_location, ),(Temperature_Change, last 1 times trigger_timestamp, is trigger_location, )), time, AC_On Temperature_Change), >, 20))\nTHEN (AC_Turn_Off, , is trigger_location) ",
+    "duration": "8.76 min",
+    "endTime": "2022-10-04 15:29:18"
+  },
+  {
+    "user": "user8",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 1 times trigger_timestamp, is trigger_location, ),(Temperature_Change, last 1 times trigger_timestamp, is trigger_location, )), time, AC_On Temperature_Change), >, 20))\nTHEN (AC_Turn_Off, , is trigger_location) \n\n",
+    "duration": "7.1 min",
+    "endTime": "2022-10-04 15:39:28"
+  },
+  {
+    "user": "user9",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, all, ac, current_ac_state), =, on)), AND, ((((AC_On, last 20 min trigger_timestamp, is trigger_location, )), count, AC_On), =, 0))\nTHEN (AC_Turn_Off, , is trigger_location) \n\n",
+    "duration": "7.16 min",
+    "endTime": "2022-10-04 15:33:51"
+  },
+  {
+    "user": "user10",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 20 min trigger_timestamp, is trigger_location, )), count, AC_On), =, 0))\nTHEN (AC_Turn_Off, , is trigger_location)\n",
+    "duration": "9.04 min",
+    "endTime": "2022-10-04 15:35:44"
+  },
+  {
+    "user": "user11",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 1 times trigger_timestamp, is trigger_location, ),(Temperature_Change, last 1 times trigger_timestamp, is trigger_location, )), time, AC_On Temperature_Change), >, 20))\nTHEN (AC_Turn_Off, , is trigger_location) \n",
+    "duration": "7.61 min",
+    "endTime": "2022-10-04 15:37:58"
+  },
+  {
+    "user": "user12",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 20 min trigger_timestamp, is trigger_location, )), count, AC_On), =, 0))\nTHEN (AC_Turn_Off, , is trigger_location)",
+    "duration": "5.08 min",
+    "endTime": "2022-10-04 15:31:35"
+  },
+  {
+    "user": "user13",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 20 min trigger_timestamp, is trigger_location, )), count, AC_On), =, 0))\nTHEN (AC_Turn_Off, , is trigger_location)",
+    "duration": "9.28 min",
+    "endTime": "2022-10-04 15:37:35"
+  },
+  {
+    "user": "user14",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 1 times trigger_timestamp, is trigger_location, ),(Temperature_Change, last 1 times trigger_timestamp, is trigger_location, )), time, AC_On Temperature_Change), >, 20))\nTHEN (AC_Turn_Off, , is trigger_location) ",
+    "duration": "6.95 min",
+    "endTime": "2022-10-04 15:32:19"
+  },
+  {
+    "user": "user15",
+    "app": "#20",
+    "dsl": "IF (Temperature_Change, )\nWHEN ((((is trigger_location, temperature), <, 20), AND, ((is trigger_location, any, ac, current_ac_state), =, on)), AND, ((((AC_On, last 20 min trigger_timestamp, is trigger_location, )), count, AC_On), =, 0))\nTHEN (AC_Turn_Off, , is trigger_location)",
+    "duration": "6.63 min",
+    "endTime": "2022-10-04 15:29:09"
+  },
+  {
+    "user": "user14",
+    "app": "#11",
+    "dsl": "IF (Make_Order, objectId isNot vip)\nWHEN ((((Make_Order, this week trigger_timestamp, , is trigger_objectId)), count, Make_Order), =, 4)\nTHEN (Notify_Waiter, Please add the customer in {trigger_location} as VIP, ) \n\n",
+    "duration": "9.47 min",
+    "endTime": "2022-10-04 14:29:51"
+  },
+  {
+    "user": "user14",
+    "app": "#7",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Entry, last 1 times trigger_timestamp, is trigger_location, is trigger_objectId),(Person_Leave, last 1 times trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), time, Person_Leave Person_Entry), <, 0.3)\nTHEN (Speak_VoiceMessage, be careful, is trigger_location) \n\n",
+    "duration": "10.83 min",
+    "endTime": "2022-09-30 15:36:52"
+  },
+  {
+    "user": "user15",
+    "app": "#7",
+    "dsl": "IF (Person_Entry, )\nWHEN ((((Person_Leave, last 0.1 min trigger_timestamp, is adjacentTo trigger_location, is trigger_objectId)), count, Person_Leave), >, 0)\nTHEN (Speak_VoiceMessage, Please be safe indoors, is trigger_location) \n\n",
+    "duration": "11.12 min",
+    "endTime": "2022-09-30 15:35:54"
+  }
+]
